@@ -1,8 +1,17 @@
 const express = require("express");
 const app = express();
+const path = require("path");
 
-app.get("/", (req, res) => res.send("Express on Vercel"));
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.listen(3000, () => console.log("Server ready on port 3000."));
+app.use(express.static(path.join(__dirname, 'app')));
+
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/views/index.html');
+});
+
+app.get('/websites/edu/teachers', (req, res) => {
+    res.sendFile(__dirname + '/views/edu_teachers.html');
+});
 
 module.exports = app;
