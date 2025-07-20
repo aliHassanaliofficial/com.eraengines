@@ -19,7 +19,6 @@
     "url": "https://github.com/aliHassanaliofficial/com.eraengines/issues"
   },
   "homepage": "https://github.com/aliHassanaliofficial/com.eraengines#readme",
-  "description": "",
   "dependencies": {
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
@@ -31,5 +30,7 @@
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.11"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }
