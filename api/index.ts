@@ -1,17 +1,8 @@
-const express = require("express");
-const app = express();
-const path = require("path");
+const app = require('../app'); // <-- Import from root ./app.js
 
-app.use(express.static(path.join(__dirname, 'public')));
+// Optional: only listen if you want to override port (usually not needed if app.js does that)
+const port = process.env.PORT || 3000;
 
-app.use(express.static(path.join(__dirname, 'app')));
-
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/views/index.html');
+app.listen(port, () => {
+  console.log(`Server ready on port ${port}`);
 });
-
-app.get('/websites/edu/teachers', (req, res) => {
-    res.sendFile(__dirname + '/views/edu_teachers.html');
-});
-
-module.exports = app;
