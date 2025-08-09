@@ -3,16 +3,12 @@
     "rewrites": [
         {
             "source": "/(.*)",
-            "destination": "/"
+            "destination": "/api/index"
         }
     ],
     "functions": {
         "api/index.ts": {
-            "includeFiles": [
-                "views/**",
-                "public/**",
-                "app/**"
-            ]
+            "includeFiles": "{views/**,public/**,app/**}"
         }
     }
 }

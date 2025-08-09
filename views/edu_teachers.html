@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Era Engines | Teachers</title>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="/globals.css">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/mediaquery.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -21,9 +21,12 @@
 
 <body>
     <div class="relative isolate px-6 py-24 sm:py-32 lg:px-8">
-        <div class="logo flex justify-center items-center py-4 fixed top-0 left-0 right-0 z-50">
+        <div
+            class="logo flex justify-center items-center py-4 fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/30">
             <a href="/">
-                <img class="w-60" src="/static/logo.png" alt="Era Engines Logo"></a>
+                <!-- <img class="w-60" src="/static/logo.png" alt="Era Engines Logo"> -->
+                <h1 class="text-4xl font-bold text-gray-900">Era Edu Service</h1>
+            </a>
         </div>
 
         <div aria-hidden="true" class="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl">
@@ -164,14 +167,12 @@
             </div>
 
             <div class="bg-white/60 p-8 ring-1 ring-gray-900/10 sm:mx-8  sm:p-10 lg:mx-0 rounded-r-3xl">
-                <h3 id="tier-hobby" class="text-base/7 font-semibold text-indigo-600">Get a quote</h3>
+                <h3 id="tier-hobby" class="text-base/7 font-semibold text-indigo-600">Custom pricing</h3>
                 <p class="mt-4 flex items-baseline gap-x-2">
-                    <span class="text-3xl font-semibold tracking-tight text-gray-500">Starts</span>
-                    <span class="text-4xl font-semibold tracking-tight text-gray-900">30,000</span>
-                    <span class="text-base text-gray-500">/month</span>
+                    <span class="text-4xl font-semibold tracking-tight text-gray-900">Get a quote</span>
                 </p>
-                <p class="mt-6 text-base/7 text-gray-600">The perfect plan if you&#039;re just getting started with our
-                    product.</p>
+                <p class="mt-6 text-base/7 text-gray-600">The perfect plan if you&#039;re just getting started teaching
+                </p>
                 <ul role="list" class="mt-8 space-y-3 text-sm/6 text-gray-600 sm:mt-10">
                     <li class="flex gap-x-3">
                         <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
@@ -211,11 +212,19 @@
                     </li>
                 </ul>
                 <a href="#" aria-describedby="tier-hobby"
-                    class="mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-indigo-600 ring-1 ring-indigo-200 ring-inset hover:ring-indigo-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-10">Get
-                    started today</a>
+                    class="mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-indigo-600 ring-1 ring-indigo-200 ring-inset hover:ring-indigo-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-10">
+                    Contact Sales</a>
             </div>
         </div>
     </div>
+
+    <footer>
+        <div class="bg-gray-900 text-white text-center py-6">
+            <p class="text-sm">© 2025 Era Engines. All rights reserved.</p>
+            <p class="text-xs mt-2">Powered by <a href="https://eraengines.vercel.app"
+                    class="text-indigo-400 hover:underline">Era Engines</a></p>
+        </div>
+    </footer>
 
 </body>
 
